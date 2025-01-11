@@ -18,6 +18,7 @@
     padding: 0 70px;
 
 }
+
 h1{
     font-size: 50px;
     font-weight: 800;
@@ -37,6 +38,12 @@ h2{
     line-height: 54px;
     color: var(--primary);
     color: #3f3f3f;
+}
+.hl{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 54px;
+    color: var(--primary);
 }
 
 p{
@@ -145,16 +152,31 @@ p{
     font-size: 16px;
     font-weight: 600; 
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.323);
+    box-shadow: 0 5px 15px rgba(73, 163, 193, 0.332);
     cursor: pointer;
     transition: 0.3s ease;
+    animation: float 1.5s ease-in-out infinite;
 }
+@keyframes float {
+    0% {
+        transform: translate(-5);
+    }
+    50% {
+        transform: translate(5px); /* Adjust the value for the float height */
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
 
 .contact-btn:hover{
     background-color: var(--primary);
     color: #f2f4f7;
     transform: scale(1.1);
     transition: 0.3s ease;
+    animation: none;
+    box-shadow: 0 5px 15px rgba(73, 163, 193, 0.505);
 
 }
 .contact-btn:active {
@@ -200,9 +222,10 @@ p{
 
 #works .bx:hover{
     cursor: pointer;
-    box-shadow: 0 15px 60px rgba(0, 0, 0, 0.366);
+    box-shadow: 0 0px 30px rgba(73, 163, 193, 0.405);
+    border: solid 1px #458cca;
     transform: scale(1.06);
-    transition: 0.2s ease;
+    transition: 0.3s ease;
 }
 /* .cntc{
     color: white;
@@ -294,6 +317,7 @@ p{
 }
 
 @media (max-width:477px) {
+
     #main{
         height: 50vh;
     }
@@ -304,6 +328,7 @@ p{
 
     #header{
         padding: 10px 8px;
+        height: 40px;
     }
     .bx-container{
         justify-content: center;
