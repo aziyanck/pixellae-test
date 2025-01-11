@@ -201,7 +201,7 @@ p{
 #works .bx:hover{
     cursor: pointer;
     box-shadow: 0 15px 60px rgba(0, 0, 0, 0.366);
-    transform: scale(1.2);
+    transform: scale(1.5);
     transition: 0.3s ease;
 }
 /* .cntc{
