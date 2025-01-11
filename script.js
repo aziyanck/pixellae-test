@@ -13,3 +13,11 @@ if(close){
         nav.classList.remove('active');
     })
 }
+
+var typed = new Typed('.hl', {
+    strings: ['Design', 'Developer'],
+    typeSpeed: 80,
+    backSpeed: 80,
+    backDelay: 1200,
+    loop: true,
+  });
