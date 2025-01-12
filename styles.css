@@ -78,6 +78,9 @@ p{
     top: 0;
     left: 0;
 }
+#header a{
+    text-decoration: none;
+}
 .log{
     display: flex;
     align-items: center;
